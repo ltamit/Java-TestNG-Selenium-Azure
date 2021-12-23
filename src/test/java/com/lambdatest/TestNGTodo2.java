@@ -24,6 +24,8 @@ public class TestNGTodo2 {
         String authkey = System.getenv("LT_ACCESS_KEY") == null ? "Your LT AccessKey" : System.getenv("LT_ACCESS_KEY");
         ;
         String hub = "@hub.lambdatest.com/wd/hub";
+        username=username.trim();
+        authkey=authkey.trim();
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platform", "Windows 10");
